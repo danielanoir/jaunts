@@ -16,13 +16,79 @@
   position: fixed;
   top: 0;
   width: 100%; }
-  .nav p {
+  .nav a {
     margin: 10px 20px 10px 20px;
     color: #3e605b;
-    font-family: Arial, Helvetica, sans-serif; }
-  .nav p:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
+  .nav a:hover {
     color: #243835;
     text-decoration: underline; }
+
+.servicesBanner {
+  position: relative;
+  padding-top: 6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  height: 30vh;
+  width: 100%;
+  background-image: url("servicesBanner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .servicesBanner .servicesHeading {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .servicesBanner .servicesHeading .title {
+      font-size: 3.5em;
+      font-family: Arial, Helvetica, sans-serif;
+      color: white;
+      text-align: center;
+      margin-top: 6vh;
+      margin-bottom: 2vh; }
+    .servicesBanner .servicesHeading .titleTwo {
+      font-size: 2.5em;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      margin-top: 0px; }
+
+.servicesNav {
+  background-color: #161616;
+  color: #82a3ff;
+  position: relative;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .servicesNav a {
+    padding: 0vw 3vw 0vw 3vw;
+    font-size: 1.5em; }
+  .servicesNav a:hover {
+    color: white; }
+
+.aboutDiv {
+  max-width: 1024px;
+  height: 100vh;
+  position: relative;
+  background-color: white; }
+
+.layoutsDiv {
+  max-width: 1024px;
+  height: 100vh;
+  display: none;
+  position: relative;
+  background-color: white; }
+
+.contactDiv {
+  max-width: 1024px;
+  height: 100vh;
+  display: none;
+  position: relative;
+  background-color: white; }
 
 .banner {
   position: relative;
