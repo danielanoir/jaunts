@@ -27,68 +27,85 @@
 
 .servicesBanner {
   position: relative;
-  padding-top: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  height: 30vh;
+  height: 50vh;
   width: 100%;
   background-image: url("servicesBanner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom; }
+  background-position: bottom;
+  border-bottom: solid #2b2b2b 1px; }
   .servicesBanner .servicesHeading {
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; }
     .servicesBanner .servicesHeading .title {
-      font-size: 3.5em;
+      font-size: 5em;
+      padding-top: 13vh;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
       text-align: center;
-      margin-top: 6vh;
+      margin-top: 4vh;
       margin-bottom: 2vh; }
     .servicesBanner .servicesHeading .titleTwo {
-      font-size: 2.5em;
+      font-size: 4em;
+      color: #d4ff4f;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
       margin-top: 0px; }
 
-.servicesNav {
-  background-color: #161616;
-  color: #82a3ff;
-  position: relative;
-  height: 8vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-  .servicesNav a {
-    padding: 0vw 3vw 0vw 3vw;
-    font-size: 1.5em; }
-  .servicesNav a:hover {
-    color: white; }
-
 .aboutDiv {
   max-width: 1024px;
-  height: 100vh;
+  height: 60vh;
   position: relative;
-  background-color: white; }
+  background-image: url("dreamComputer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  border-radius: 20px;
+  text-align: center; }
+  .aboutDiv h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 7em 4em 0em 4em;
+    color: black; }
+  .aboutDiv p {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0em 4em 0em 4em;
+    font-size: 1.5em;
+    color: black; }
 
 .layoutsDiv {
   max-width: 1024px;
-  height: 100vh;
-  display: none;
   position: relative;
-  background-color: white; }
-
-.contactDiv {
-  max-width: 1024px;
-  height: 100vh;
-  display: none;
-  position: relative;
-  background-color: white; }
+  background-color: #f5ffc6;
+  margin: 3vh auto 3vh auto;
+  border-radius: 20px;
+  text-align: center;
+  padding-bottom: 2em; }
+  .layoutsDiv h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    padding: 1em 1em 0em 1em;
+    color: black; }
+  .layoutsDiv h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    padding: 0em 1em 1em 1em;
+    color: black; }
+  .layoutsDiv .layoutEx {
+    width: 80%;
+    height: 10vw;
+    margin: 2em auto 2em auto;
+    background-color: white;
+    border: solid #848484 1px; }
 
 .banner {
   position: relative;
