@@ -29,7 +29,7 @@ var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/busines
                   var state = item.location.state;
                   var zipcode = item.location.zip_code;
                   // Append our result into our page
-                  $('#results').append('<div class="juant" id="' + id + '" style="margin-top:50px;margin-bottom:50px;"><img src="' + image + '" style="width:200px;height:150px;"><br> <b>' + name + '</b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
+                  $('#results').append('<div class="juant" id="' + id + '""><img src="' + image + '" style="width:200px;height:150px;"><br> <b>' + name + '</b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
             });
           } else {
               // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found

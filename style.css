@@ -1,4 +1,11 @@
+.bodyContainer {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  background-color: #e5e5e5; }
+
 .nav {
+  z-index: 100;
   height: 6vh;
   background-color: white;
   border-bottom: solid #d3edeb 5px;
@@ -18,18 +25,20 @@
     text-decoration: underline; }
 
 .banner {
+  position: relative;
   padding-top: 6vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   height: 50vh;
+  width: 100%;
   background-image: url(banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top; }
   .banner .heading {
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column; }
     .banner .heading .jaunts {
@@ -47,10 +56,16 @@
       margin-bottom: 5vh; }
   .banner .search {
     background-color: white;
-    height: 50px; }
+    height: 50px;
+    border-radius: 10px; }
     .banner .search input {
       width: 20vw;
-      border: none; }
+      border: none;
+      font-size: 1.5em;
+      padding-left: 1vw;
+      color: #33635c; }
+    .banner .search input:focus {
+      outline-width: 0; }
     .banner .search button {
       border: none;
       background-color: #f93802;
@@ -58,31 +73,39 @@
       height: 50px;
       width: 50px;
       margin-left: auto;
-      margin-right: 0px; }
+      margin-right: 0px;
+      border-radius: 0px 10px 10px 0px; }
     .banner .search button:hover {
       background-color: #e03201; }
 
-.container {
-  background-color: #f4f4f4; }
-  .container #results {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 1024px;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto; }
-    .container #results .juant {
+.wrapper {
+  z-index: 0;
+  position: relative;
+  height: 103%;
+  min-height: 100vh; }
+  .wrapper .mainBodyBackground {
+    height: 103%;
+    width: 99%;
+    position: fixed; }
+  .wrapper .container {
+    position: relative;
+    background-attachment: fixed; }
+    .wrapper .container #results {
       display: flex;
-      justify-content: center;
       flex-direction: column;
-      padding: 5px;
-      border: solid .5px #cccccc;
-      border-radius: 10px;
-      background-color: white;
-      margin: 1vw;
-      height: 35vh;
-      width: 200px; }
+      max-width: 1024px;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto; }
+      .wrapper .container #results .juant {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-top: 1vh;
+        border-radius: 10px;
+        background-color: white;
+        margin: 1em;
+        height: 10em;
+        width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

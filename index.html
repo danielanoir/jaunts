@@ -8,9 +8,24 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="bodyContainer">
+  <div class="wrapper">
+  <div class="mainBodyBackground">
+    <svg height="100%" width="100%">
+      <defs>
+        <pattern id="polka-dots" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+          <circle fill="white" cx="6" cy="6" r="4">
+          </circle>
+        </pattern>
+      </defs>
+      <rect x="0" y="0" width="100%" height="100%" fill="url(#polka-dots)"></rect>
+    </svg>
+  </div>
+
+
 
 <div class="nav">
-  <p>Home</p>
+  <p>jaunts.info</p>
   <p>Web Development Services</p>
 </div>
 
@@ -18,11 +33,11 @@
 
 <div class="banner">
     <div class="heading">
-      <h1 class="jaunts">JAUNTS</h1>
+      <h1 class="jaunts">jaunts</h1>
       <h1 class="town">Harpers Ferry, WV</h1>
     </div>
   <div class="search">
-    <input type="text" placeholder="  Search Towns">
+    <input type="text" placeholder="Search Towns">
     <button>
       <i class="fas fa-search fa-2x"></i>
     </button>
@@ -45,5 +60,6 @@
 
 </div>
 <script src="scripts.js"></script>
+</div>
 </body>
 </html>
