@@ -1,0 +1,140 @@
+html {
+
+body {
+margin: 0;
+padding: 0;
+.topContainer {
+// width: 100vw;
+height: 100vh;
+background-image: url("yummy.jpg");
+background-position:top;
+background-repeat: no-repeat;
+background-size: cover;
+  .header {
+    background-color: black;
+    color: #b2b2b2;
+    // width: 100vw;
+    padding: .1em 0em .1em 0em;
+    text-align: center;
+    font-size: .8em;
+    letter-spacing: 2px;
+  }
+  .logo {
+    width: 10vw;
+    height:10vh;
+    color: black;
+    font-size: 2em;
+    h1 {
+      margin: .2em;
+    }
+  }
+  .navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0em 3em 0em 0em;
+    .nav {
+      background-color: white;
+      opacity: .8;
+      padding: 1em;
+      a {
+        font-size: .8em;
+        padding: 0em 1em 0em 1em;
+        letter-spacing: 2px;
+      }
+      a:hover {
+        color: #4f4f4f;
+      }
+    }
+    .contactDiv {
+      background-color: black;
+      opacity: .8;
+      padding: 1em;
+      .contact {
+        color: white;
+        font-size: .8em;
+        padding: 0em 1em 0em 1em;
+        letter-spacing: 2px;
+      }
+      .contact:hover{
+        color: #b2b2b2;
+      }
+    }
+
+  }
+  .blurbBox {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2em;
+    color: #2d2d2d;
+    text-align: center;
+    background-color: white;
+    letter-spacing: 2px;
+    line-height: 30px;
+    bottom: 1em;
+    right: 4em;
+    position: absolute;
+    width: 30em;
+    height: 12em;
+    h1 {
+      font-size: 1.5em;
+      font-weight: 100;
+    }
+    p {
+      font-weight: 100;
+    }
+  }
+}
+
+.reviewDiv {
+  margin: 0;
+  padding: 5em 0em 5em 0em;
+  width: 100%;
+  height: 10vh;
+  background-color: #f5f4f9;
+  p {
+    font-size: 1.5em;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0em;
+    color: #2d2d2d;
+  }
+}
+
+.aboutScroll {
+  width: 100%;
+  height: 80vh;
+  background-attachment: fixed;
+  background-image: url("yummy2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .aboutDiv {
+    text-align: center;
+    width: 30vw;
+  }
+  h1 {
+    font-size: 3em;
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+  }
+  button {
+    padding: 1em;
+    font-size: 1em;
+    background-color: #dddddd;
+    color: #1e1e1e;
+  }
+}
+
+.longScroll {
+  width: 100%;
+  height: 2000px;
+  background-color: #f5f4f9;
+}
+
+}
+}
