@@ -1,4 +1,15 @@
-var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=harpersferry";
+
+// - action can be triggered onclick of Enter or clicking Search button
+// - function triggered by click will take string typed,
+//
+// FUNCTION
+// Remove spaces from string (only letters or numbers get pulled into the next variable)
+// if length is less than 5, nothing happens
+// If length is equal to or more than 5, send to variable
+// Concatonate new variable to end of "myurl" variable
+// Than run search using new variable url
+
+var myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=25425";
 
    $.ajax({
       url: myurl,
