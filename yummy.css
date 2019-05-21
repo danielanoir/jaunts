@@ -95,14 +95,19 @@ html body {
     html body .aboutScroll .textDiv {
       width: 40vw;
       min-width: 200px;
-      height: 30vh;
       background-color: black;
       opacity: 0.8;
       display: flex;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      flex-direction: column; }
       html body .aboutScroll .textDiv h1 {
-        font-size: 3.5em;
+        font-size: 3em;
+        color: #74f442;
+        font-weight: 100;
+        margin: 15px 0px 0px 0px; }
+      html body .aboutScroll .textDiv p {
+        font-size: 1.5em;
         color: #74f442;
         font-weight: 100; }
   html body .longScroll {
