@@ -31,6 +31,7 @@ function searchTowns(){
     var input = inputOriginal.replace(/\s+/g, '');
     if (input.length > 4){
       myurl = myurl.slice(0, -5) + input;
+      $('.town').empty();
     }
   }
   $.ajax({
@@ -66,6 +67,9 @@ function searchTowns(){
           // Append our result into our page
           $('#results').append('<div class="jaunt" id="' + id + '""><img src="' + image + '" style="width:200px;height:150px;"><br> <b>' + name + '</b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
         });
+        var firstDataState = data.businesses[0].location.state;
+        var firstDataCity = data.businesses[0].location.city;
+        $('.town').append(firstDataCity + ", " + firstDataState);
       } else {
         // If our results are 0; no businesses were returned by the JSON therefor we display on the page no results were found
         $('#results').append('<h5>We discovered no results!</h5>');
