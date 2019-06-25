@@ -138,15 +138,17 @@
 .banner {
   padding-top: 6vh;
   margin-bottom: 6vh;
-  height: 80vh;
+  height: 70vh;
   width: 100%;
-  position: relative; }
-  .banner .slideShowImage {
-    position: absolute;
-    z-index: -100;
-    height: 80vh;
-    width: 100%;
-    object-fit: fill; }
+  background-image: url(bannerSlide1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
   .banner .bannerTextDiv {
     display: flex;
     flex-direction: column;
@@ -154,11 +156,11 @@
     align-content: center;
     text-align: center;
     margin: auto;
-    margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
     width: 40vw;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     color: white;
     border-radius: 10px;
     padding: 50px; }
@@ -202,34 +204,17 @@
     .banner .search button:hover {
       background-color: #e03201; }
 
-.wrapper {
-  z-index: 0;
-  position: relative;
-  height: 103%;
-  min-height: 100vh; }
-  .wrapper .mainBodyBackground {
-    height: 103%;
-    width: 99%;
-    position: fixed; }
-  .wrapper .container {
-    position: relative;
-    background-attachment: fixed; }
-    .wrapper .container #results {
-      display: flex;
-      flex-direction: column;
-      max-width: 1024px;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto; }
-      .wrapper .container #results .juant {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: row;
-        padding-top: 1vh;
-        border-radius: 10px;
-        background-color: white;
-        margin: 1em;
-        height: 10em;
-        width: 100%; }
+#results .jaunt {
+  background-color: red;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-top: 1vh;
+  border: solid .5px #cccccc;
+  border-radius: 10px;
+  background-color: white;
+  margin: 1em;
+  height: 10em;
+  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

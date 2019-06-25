@@ -1,13 +1,3 @@
-
-// - action can be triggered onclick of Enter or clicking Search button
-// - function triggered by click will take string typed,
-
-// FUNCTION
-// Remove spaces from string (only letters or numbers get pulled into the next variable)
-// if length is less than 5, nothing happens
-// If length is equal to or more than 5, send to variable
-// Concatonate new variable to end of "myurl" variable
-// Than run search using new variable url
 $( document ).ready(function() {
     console.log( "ready!" );
     searchTowns();
@@ -76,21 +66,4 @@ function searchTowns(){
       }
     }
   });
-}
-
-var slideIndex = 0;
-carousel();
-
-
-
-function carousel() {
-  var i;
-  var x = $(".slideShowImage");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > x.length) {slideIndex = 1}
-  x[slideIndex-1].style.display = "block";
-  setTimeout(carousel, 20000); // Change image every 2 seconds
 }
