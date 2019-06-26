@@ -24,6 +24,180 @@
     color: #243835;
     text-decoration: underline; }
 
+.banner {
+  padding-top: 6vh;
+  height: 94vh;
+  width: 100%;
+  background-image: url(bannerSlide1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  .banner .bannerTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 8vh;
+    margin-bottom: 8vh;
+    width: 40vw;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 10px;
+    padding: 50px; }
+    .banner .bannerTextDiv .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .banner .bannerTextDiv .heading .jaunts {
+        font-size: 4em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f93802;
+        text-align: center; }
+      .banner .bannerTextDiv .heading .town {
+        font-size: 3em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 5vh; }
+  .banner .search {
+    background-color: white;
+    height: 50px;
+    border-radius: 10px; }
+    .banner .search input {
+      width: 20vw;
+      border: none;
+      font-size: 1.5em;
+      padding-left: 1vw;
+      color: #33635c; }
+    .banner .search input:focus {
+      outline-width: 0; }
+    .banner .search button {
+      border: none;
+      background-color: #f93802;
+      color: white;
+      height: 50px;
+      width: 50px;
+      margin-left: auto;
+      margin-right: 0px;
+      border-radius: 0px 10px 10px 0px; }
+    .banner .search button:hover {
+      background-color: #e03201; }
+
+.layout2 .bodyContainer {
+  width: 100%;
+  position: relative;
+  margin: auto; }
+.layout2 .nav {
+  z-index: 100;
+  height: 6vh;
+  background-color: white;
+  border-bottom: solid #d3edeb 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .layout2 .nav a {
+    margin: 10px 20px 10px 20px;
+    color: #3e605b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
+  .layout2 .nav a:hover {
+    color: #243835;
+    text-decoration: underline; }
+.layout2 .banner {
+  height: 20vh;
+  width: 100%;
+  background-image: url(bannerSlide1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  .layout2 .banner .bannerTextDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: -5px;
+    width: 94vw;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 0px; }
+    .layout2 .banner .bannerTextDiv .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center; }
+      .layout2 .banner .bannerTextDiv .heading .jaunts {
+        display: none; }
+      .layout2 .banner .bannerTextDiv .heading .town {
+        font-size: 2em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 5vh; }
+  .layout2 .banner .search {
+    background-color: white;
+    height: 50px;
+    border-radius: 10px; }
+    .layout2 .banner .search input {
+      width: 20vw;
+      border: none;
+      font-size: 1.5em;
+      padding-left: 1vw;
+      color: #33635c; }
+    .layout2 .banner .search input:focus {
+      outline-width: 0; }
+    .layout2 .banner .search button {
+      border: none;
+      background-color: #f93802;
+      color: white;
+      height: 50px;
+      width: 50px;
+      margin-left: auto;
+      margin-right: 0px;
+      border-radius: 0px 10px 10px 0px; }
+    .layout2 .banner .search button:hover {
+      background-color: #e03201; }
+.layout2 .mapAndResults {
+  display: flex;
+  flex-direction: row; }
+  .layout2 .mapAndResults #results h1 {
+    border: solid red; }
+  .layout2 .mapAndResults #results .jaunt {
+    background-color: red;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding-top: 1vh;
+    border: solid .5px #cccccc;
+    border-radius: 10px;
+    background-color: white;
+    margin: 1em;
+    height: 10em;
+    width: 30vw; }
+  .layout2 .mapAndResults .map {
+    height: 70vh;
+    width: 70vw; }
+
 .servicesBanner {
   position: relative;
   display: flex;
@@ -134,87 +308,5 @@
         font-family: Arial, Helvetica, sans-serif;
         color: #0300ff;
         font-size: 4em; }
-
-.banner {
-  padding-top: 6vh;
-  margin-bottom: 6vh;
-  height: 70vh;
-  width: 100%;
-  background-image: url(bannerSlide1.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  justify-content: center; }
-  .banner .bannerTextDiv {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    margin: auto;
-    margin-top: 8vh;
-    margin-bottom: 8vh;
-    width: 40vw;
-    background-color: black;
-    opacity: 0.9;
-    color: white;
-    border-radius: 10px;
-    padding: 50px; }
-    .banner .bannerTextDiv .heading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center; }
-      .banner .bannerTextDiv .heading .jaunts {
-        font-size: 4em;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #f93802;
-        text-align: center; }
-      .banner .bannerTextDiv .heading .town {
-        font-size: 3em;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 0px;
-        margin-bottom: 5vh; }
-  .banner .search {
-    background-color: white;
-    height: 50px;
-    border-radius: 10px; }
-    .banner .search input {
-      width: 20vw;
-      border: none;
-      font-size: 1.5em;
-      padding-left: 1vw;
-      color: #33635c; }
-    .banner .search input:focus {
-      outline-width: 0; }
-    .banner .search button {
-      border: none;
-      background-color: #f93802;
-      color: white;
-      height: 50px;
-      width: 50px;
-      margin-left: auto;
-      margin-right: 0px;
-      border-radius: 0px 10px 10px 0px; }
-    .banner .search button:hover {
-      background-color: #e03201; }
-
-#results .jaunt {
-  background-color: red;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: row;
-  padding-top: 1vh;
-  border: solid .5px #cccccc;
-  border-radius: 10px;
-  background-color: white;
-  margin: 1em;
-  height: 10em;
-  width: 80%; }
 
 /*# sourceMappingURL=style.css.map */

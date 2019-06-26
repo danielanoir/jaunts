@@ -8,12 +8,15 @@ $( document ).ready(function() {
 myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=25425";
 console.log(myurl);
 
+
+//search towns on enter
 $(document).on('keypress',function(e) {
 if(e.which == 13) {
     searchTowns();
 }
 });
 
+//Search for towns from users input
 function searchTowns(){
   $('#results').empty();
   document.getElementById("search");{
@@ -24,6 +27,15 @@ function searchTowns(){
       $('.town').empty();
     }
   }
+
+  //add class to banner after search to change layout
+
+  $('#search').click(function() {
+  $('.layoutContainer').addClass('layout2');
+});
+
+
+  // ajax call to retrieve yelp data
   $.ajax({
     url: myurl,
     headers: {
@@ -67,3 +79,19 @@ function searchTowns(){
     }
   });
 }
+
+  var map = new ol.Map({
+    target: 'map',
+    layers: [
+      new ol.layer.Tile({
+        source: new ol.source.OSM()
+      })
+    ],
+    view: new ol.View({
+      center: ol.proj.fromLonLat([-100, 37]),
+      zoom: 4,
+      minZoom: 4,
+      maxZoom: 20
+    })
+  });
+// });

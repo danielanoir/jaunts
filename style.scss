@@ -32,6 +32,238 @@
   }
 
 
+  .banner {
+    padding-top: 6vh;
+    // margin-bottom: 6vh;
+    height: 94vh;
+    width: 100%;
+    background-image: url(bannerSlide1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    .bannerTextDiv{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      text-align: center;
+      margin: auto;
+      margin-top: 8vh;
+      margin-bottom: 8vh;
+      width: 40vw;
+      background-color: black;
+      opacity: 0.9;
+      color: white;
+      border-radius: 10px;
+      padding: 50px;
+      .heading {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      .jaunts {
+        font-size: 4em;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f93802;
+        text-align: center;
+      }
+      .town {
+        font-size: 3em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 0px;
+        margin-bottom: 5vh;
+      }
+    }
+  }
+    .search {
+      background-color: white;
+      height: 50px;
+      border-radius: 10px;
+      input {
+        width: 20vw;
+        border: none;
+        font-size: 1.5em;
+        padding-left: 1vw;
+        color: #33635c;
+      }
+      input:focus {
+      outline-width: 0;
+      }
+      button {
+        border: none;
+        background-color: #f93802;
+        color: white;
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        margin-right: 0px;
+        border-radius: 0px 10px 10px 0px;
+      }
+      button:hover {
+        background-color: #e03201;
+      }
+    }
+  }
+
+
+//Second layout for after the initial town search
+.layout2 {
+  .bodyContainer{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    // background-color: #e5e5e5;
+  }
+
+    .nav {
+      z-index: 100;
+      height: 6vh;
+      background-color: white;
+      border-bottom: solid #d3edeb 5px;
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      a {
+        margin: 10px 20px 10px 20px;
+        color: #3e605b;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+      }
+      a:hover {
+        color: #243835;
+        text-decoration: underline;
+      }
+    }
+
+
+    .banner {
+      height: 20vh;
+      width: 100%;
+      background-image: url(bannerSlide1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      .bannerTextDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        margin-top: -5px;
+        width: 94vw;
+        background-color: black;
+        opacity: 0.9;
+        color: white;
+        border-radius: 0px;
+        .heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        .jaunts {
+          display: none;
+        }
+        .town {
+          font-size: 2em;
+          text-align: center;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 0px;
+          margin-bottom: 5vh;
+        }
+      }
+    }
+      .search {
+        background-color: white;
+        height: 50px;
+        border-radius: 10px;
+        input {
+          width: 20vw;
+          border: none;
+          font-size: 1.5em;
+          padding-left: 1vw;
+          color: #33635c;
+        }
+        input:focus {
+        outline-width: 0;
+        }
+        button {
+          border: none;
+          background-color: #f93802;
+          color: white;
+          height: 50px;
+          width: 50px;
+          margin-left: auto;
+          margin-right: 0px;
+          border-radius: 0px 10px 10px 0px;
+        }
+        button:hover {
+          background-color: #e03201;
+        }
+      }
+    }
+  .mapAndResults{
+    display: flex;
+    flex-direction: row;
+    #results {
+      h1 {
+        border: solid red;
+        
+      }
+      .jaunt {
+        background-color: red;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        padding-top: 1vh;
+        border: solid .5px #cccccc;
+        border-radius: 10px;
+        background-color: white;
+        margin: 1em;
+        height: 10em;
+        width: 30vw;
+      }
+    }
+    .map {
+      height: 70vh;
+      width: 70vw;
+    }
+
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //This portion is on the Web Servivces page, services.html
   .servicesBanner {
     position: relative;
@@ -163,103 +395,4 @@
     }
   }
   }
-
-
   //End of web services portion
-
-
-  .banner {
-    padding-top: 6vh;
-    margin-bottom: 6vh;
-    height: 70vh;
-    width: 100%;
-    background-image: url(bannerSlide1.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    .bannerTextDiv{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      margin: auto;
-      margin-top: 8vh;
-      margin-bottom: 8vh;
-      width: 40vw;
-      background-color: black;
-      opacity: 0.9;
-      color: white;
-      border-radius: 10px;
-      padding: 50px;
-      .heading {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-      .jaunts {
-        font-size: 4em;
-        font-family: Arial, Helvetica, sans-serif;
-        color: #f93802;
-        text-align: center;
-      }
-      .town {
-        font-size: 3em;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-        margin-top: 0px;
-        margin-bottom: 5vh;
-      }
-    }
-  }
-    .search {
-      background-color: white;
-      height: 50px;
-      border-radius: 10px;
-      input {
-        width: 20vw;
-        border: none;
-        font-size: 1.5em;
-        padding-left: 1vw;
-        color: #33635c;
-      }
-      input:focus {
-      outline-width: 0;
-      }
-      button {
-        border: none;
-        background-color: #f93802;
-        color: white;
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        margin-right: 0px;
-        border-radius: 0px 10px 10px 0px;
-      }
-      button:hover {
-        background-color: #e03201;
-      }
-    }
-  }
-
-  #results {
-    .jaunt {
-      background-color: red;
-      display: flex;
-      justify-content: flex-start;
-      flex-direction: row;
-      padding-top: 1vh;
-      border: solid .5px #cccccc;
-      border-radius: 10px;
-      background-color: white;
-      margin: 1em;
-      height: 10em;
-      width: 80%;
-    }
-  }
-// }
