@@ -1,0 +1,28 @@
+.topContainer {
+  height: 70vh;
+  background-image: url("chill1.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .topContainer .header {
+    background-color: white;
+    color: black;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end; }
+    .topContainer .header .logo {
+      margin-left: 0px;
+      margin-right: auto; }
+      .topContainer .header .logo a {
+        padding: 10px;
+        font-size: 4em;
+        color: red; }
+    .topContainer .header .headerText {
+      color: blue;
+      font-size: 1.5em; }
+      .topContainer .header .headerText a {
+        padding: 0px 10px 0px 10px; }
+
+/*# sourceMappingURL=chill.css.map */

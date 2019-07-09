@@ -1,18 +1,20 @@
 $( document ).ready(function() {
     console.log( "ready!" );
-    searchTowns();
+    // searchTowns();
 });
 
 
 
-myurl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=25425";
-console.log(myurl);
+searchUrl = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=";
+console.log(searchUrl);
 
 
 //search towns on enter
 $(document).on('keypress',function(e) {
 if(e.which == 13) {
     searchTowns();
+    console.log("searching towns...");
+    $('.layoutContainer').addClass('layout2');
 }
 });
 
@@ -23,7 +25,7 @@ function searchTowns(){
     var inputOriginal = document.getElementById("input").value;
     var input = inputOriginal.replace(/\s+/g, '');
     if (input.length > 4){
-      myurl = myurl.slice(0, -5) + input;
+      myurl = searchUrl + input;
       $('.town').empty();
     }
   }
@@ -67,7 +69,7 @@ function searchTowns(){
           var state = item.location.state;
           var zipcode = item.location.zip_code;
           // Append our result into our page
-          $('#results').append('<div class="jaunt" id="' + id + '""><img src="' + image + '" style="width:200px;height:150px;"><br> <b>' + name + '</b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
+          $('#results').append('<div class="jaunt" id="' + id + '"">' + name + '<img src="' + image + '" style="width:200px;height:150px;"><br> <b></b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
         });
         var firstDataState = data.businesses[0].location.state;
         var firstDataCity = data.businesses[0].location.city;
@@ -79,19 +81,3 @@ function searchTowns(){
     }
   });
 }
-
-  var map = new ol.Map({
-    target: 'map',
-    layers: [
-      new ol.layer.Tile({
-        source: new ol.source.OSM()
-      })
-    ],
-    view: new ol.View({
-      center: ol.proj.fromLonLat([-100, 37]),
-      zoom: 4,
-      minZoom: 4,
-      maxZoom: 20
-    })
-  });
-// });
