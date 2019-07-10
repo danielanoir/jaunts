@@ -1,0 +1,194 @@
+html {
+  font-family: Arial, Helvetica, sans-serif; }
+  html body {
+    margin: 0;
+    padding: 0; }
+    html body .topContainer {
+      height: 100vh;
+      background-image: url("lightbulbs.jpg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover; }
+      html body .topContainer .topNavigation {
+        font-size: 1.5em;
+        z-index: 100;
+        background-color: #0f0f0f;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        text-align: center; }
+        html body .topContainer .topNavigation a {
+          margin: 10px 20px 10px 20px;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          text-decoration: none; }
+        html body .topContainer .topNavigation a:hover {
+          color: #ff501f; }
+      html body .topContainer .logo {
+        width: 10vw;
+        height: 10vh;
+        color: black;
+        font-size: 2.5em;
+        padding-top: 10vh;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif; }
+        html body .topContainer .logo h1 {
+          margin: .2em; }
+      html body .topContainer .navContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em; }
+        html body .topContainer .navContainer .nav {
+          background-color: white;
+          opacity: .8;
+          padding: 1em;
+          font-size: 1em; }
+          html body .topContainer .navContainer .nav a {
+            padding: 0em 1em 0em 1em;
+            letter-spacing: 2px; }
+          html body .topContainer .navContainer .nav a:hover {
+            color: #ff501f;
+            cursor: pointer; }
+        html body .topContainer .navContainer .contactDiv {
+          background-color: black;
+          opacity: .8;
+          padding: 1em; }
+          html body .topContainer .navContainer .contactDiv .contact {
+            color: white;
+            font-size: 1em;
+            padding: 0em 1em 0em 1em;
+            letter-spacing: 2px; }
+          html body .topContainer .navContainer .contactDiv .contact:hover {
+            cursor: pointer;
+            color: #ff501f; }
+      html body .topContainer .blurbBox {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 1em;
+        color: black;
+        text-align: center;
+        background-color: white;
+        opacity: .6;
+        letter-spacing: 2px;
+        line-height: 30px;
+        bottom: 4em;
+        right: 4em;
+        position: absolute;
+        width: 40em;
+        height: 10em; }
+        html body .topContainer .blurbBox h1 {
+          font-size: 2.5em;
+          font-weight: 100; }
+        html body .topContainer .blurbBox p {
+          font-weight: 100;
+          font-size: 2em; }
+    html body .reviewDiv {
+      margin: 0;
+      padding: 5em 0em 5em 0em;
+      width: 100%;
+      height: 10vh;
+      background-color: #fffef2; }
+      html body .reviewDiv p {
+        font-size: 1.8em;
+        line-height: 30px;
+        letter-spacing: 2px;
+        text-align: center;
+        margin: 0em;
+        color: #2d2d2d; }
+    html body .servicesScroll {
+      width: 100%;
+      height: 80vh;
+      background-attachment: fixed;
+      background-image: url("boxes.jpg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      html body .servicesScroll .servicesDiv {
+        text-align: center;
+        width: 30vw; }
+      html body .servicesScroll .textDiv {
+        padding: 1em 0em 1em 0em;
+        width: 35vw;
+        min-width: 200px;
+        background-color: black;
+        opacity: 0.9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        html body .servicesScroll .textDiv h1 {
+          font-size: 3em;
+          color: #ebdbff;
+          font-weight: 100;
+          margin: 15px 0px 0px 0px; }
+        html body .servicesScroll .textDiv p {
+          font-size: 2em;
+          color: #ebdbff;
+          font-weight: 100; }
+    html body .longScroll {
+      width: 100%;
+      height: 90vh;
+      background-color: #e8efff;
+      padding: 10em 0em 0em 0em;
+      display: flex;
+      align-items: center; }
+      html body .longScroll .image1 {
+        width: 55em;
+        height: 40em;
+        background-image: url("workstation.jpg");
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover; }
+      html body .longScroll .text1 {
+        width: 35em;
+        height: 15em;
+        float: right;
+        opacity: 0.8;
+        background-color: white;
+        text-align: center;
+        padding: 1em;
+        color: #2d2d2d;
+        line-height: 30px;
+        letter-spacing: 3px;
+        font-size: 1.5em; }
+        html body .longScroll .text1 h1 {
+          font-size: 2em;
+          font-weight: 100; }
+        html body .longScroll .text1 a {
+          text-decoration: underline; }
+        html body .longScroll .text1 a:hover {
+          color: #828282; }
+    html body .footer {
+      height: 25vh;
+      width: 100%;
+      background-color: #0f0f0f;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      flex-flow: column; }
+      html body .footer .jauntsFooterTitle {
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: 2em;
+        margin: .5em; }
+      html body .footer .email {
+        color: #ff501f;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: 2px;
+        font-weight: 100;
+        font-size: 2em;
+        margin: .5em;
+        text-decoration: none; }
+
+/*# sourceMappingURL=webdesign.css.map */

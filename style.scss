@@ -1,17 +1,16 @@
 //MAIN two websites below, Jaunts.info and Jaunts Web Services
-html {
-// background-color: #ebf6f7;
+body {
+  padding: 0;
+  margin: 0;
 .bodyContainer{
-  width: 100%;
   position: relative;
-  margin: auto;
 }
 
   .nav {
+    font-size: 1.5em;
     z-index: 100;
-    height: 6vh;
-    background-color: white;
-    border-bottom: solid #d3edeb 5px;
+    background-color: #0f0f0f;
+    color: white;
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -19,24 +18,25 @@ html {
     position: fixed;
     top: 0;
     width: 100%;
+    text-align: center;
     a {
       margin: 10px 20px 10px 20px;
-      color: #3e605b;
+      color: white;
       font-family: Arial, Helvetica, sans-serif;
       text-decoration: none;
     }
     a:hover {
-      color: #243835;
-      text-decoration: underline;
+      color: #ff501f;
+      // text-decoration: underline;
     }
   }
 
 
   .banner {
-    padding-top: 6vh;
-    // margin-bottom: 6vh;
-    height: 94vh;
-    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100vw;
     background-image: url(bannerSlide1.jpg);
     background-position: top;
     background-size: cover;
@@ -53,8 +53,8 @@ html {
       align-content: center;
       text-align: center;
       margin: auto;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
+      margin-top: 3vh;
+      margin-bottom: 3vh;
       width: 30vw;
       background-color: black;
       opacity: 0.9;
@@ -71,7 +71,7 @@ html {
         padding: 20px;
         margin: 0px;
         font-family: Arial, Helvetica, sans-serif;
-        color: #f93802;
+        color: #ff501f;
         text-align: center;
       }
       .town {
@@ -95,7 +95,7 @@ html {
       }
       button {
         border: none;
-        background-color: #f93802;
+        background-color: #ff501f;
         color: white;
         height: 60px;
         width: 60px;
@@ -121,33 +121,10 @@ html {
     margin: auto;
   }
 
-    .nav {
-      z-index: 100;
-      height: 6vh;
-      background-color: white;
-      border-bottom: solid #d3edeb 5px;
-      display: flex;
-      flex-direction: row;
-      align-items:center;
-      overflow: hidden;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      a {
-        margin: 10px 20px 10px 20px;
-        color: #3e605b;
-        font-family: Arial, Helvetica, sans-serif;
-        text-decoration: none;
-      }
-      a:hover {
-        color: #243835;
-        text-decoration: underline;
-      }
-    }
-
-
     .banner {
-      height: 20vh;
+      height: 18vh;
+      padding: 0px;
+      margin: 0px;
       width: 100%;
       position: fixed;
       z-index: 90;
@@ -155,22 +132,31 @@ html {
       background-image: none;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-end;
       align-content: center;
       justify-content: center;
+      background-color: black;
+      background-image: url("bannerSlide1.jpg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // opacity: 0.9;
       .bannerTextDiv{
+        border-radius: 0;
+        padding: 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
         align-content: center;
         text-align: center;
-        margin: auto;
-        margin-top: -5px;
-        width: 97vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
         background-color: black;
         opacity: 0.9;
+        width: 100vw;
+        height: 18vh;
         color: white;
-        border-radius: 0px;
         .heading {
         display: flex;
         flex-direction: column;
@@ -179,12 +165,19 @@ html {
         .jaunts {
           display: none;
         }
-        .town {
-          display: inline;
-          font-size: 2em;
-          text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
-          padding: 10px 10px 20px 10px;
+        .dynamicTownName{
+          height:   3em;
+          padding-top: 20px;
+          .town {
+            display: inline;
+            font-size: 2em;
+            color: white;
+            padding: 0px;
+            margin: 0px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 10px 20px 10px;
+          }
         }
       }
     }
@@ -204,7 +197,7 @@ html {
         }
         button {
           border: none;
-          background-color: #f93802;
+          background-color: #ff501f;
           color: white;
           height: 50px;
           width: 50px;
@@ -222,6 +215,34 @@ html {
     flex-direction: row;
     justify-content: center;
     padding-top: 26vh;
+
+    #loader {
+      border: 16px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 16px solid #ff5900;
+      // border-right: 16px solid #ff5900;
+      border-bottom: 16px solid #ff5900;
+      // border-left: 16px solid #ff5900;
+      width: 120px;
+      height: 120px;
+      margin-top: 10vh;
+      -webkit-animation: spin 2s linear infinite;
+      animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+      0% { -webkit-transform: rotate(0deg); }
+      100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .hideLoader {
+      display: none;
+    }
+
     #results {
       .jaunt {
         display: flex;
@@ -241,8 +262,16 @@ html {
           max-width: 30vw;
           font-family: Arial, Helvetica, sans-serif;
           color: #2e2e2e;
-          h1 {
+          .businessName {
             font-size:1.8em;
+            color: #005463;
+            text-decoration: none;
+            margin-bottom: 0px;
+          }
+          .price {
+            margin-top: 2px;
+            font-size: 1.5em;
+            font-weight: bold;
           }
           p {
             font-size: 1.2em;
@@ -262,6 +291,18 @@ html {
         }
       }
     }
+    .noResultsMessage {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #585959;
+      font-size: 2em;
+      padding-top: 8vh;
+    }
+  }
+  .failedResultsMessage {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #585959;
+    font-size: 2em;
+    padding-top: 8vh;
   }
 }
 }

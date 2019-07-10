@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Jaunts</title>
-<link rel="icon" href="favicon.png">
+<link rel="icon" href="favicon.ico">
 <script src="https://kit.fontawesome.com/2d5c23a57d.js"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel='stylesheet' href='style.css' />
@@ -15,8 +15,8 @@
 
 <div class="layoutContainer">
 <div class="nav">
-  <a href="index.html">jaunts.info</a>
-  <a href="webdev.html">Jaunts Web Designs</a>
+  <a href="index.html" style="color: #ff501f;">jaunts.info</a>
+  <a href="webdesign.html">web design</a>
 </div>
 
 
@@ -24,10 +24,10 @@
   <div class="bannerTextDiv">
     <div class="heading">
       <h1 class="jaunts">jaunts</h1>
-      <h1 class="town"></h1>
+      <div class="dynamicTownName"><h1 class="town"></h1></div>
     </div>
   <div class="search">
-    <input type="text" id="input" placeholder="Search Towns">
+    <input type="text" id="input" placeholder="Search towns">
     <button id="search" onclick="searchTowns()">
       <i class="fas fa-search fa-2x"></i>
     </button>
@@ -36,9 +36,7 @@
 </div>
 
   <div class="resultsDiv">
-    <!-- <div class="resultsTitle"> -->
-      <!-- <h1>jaunt</h1> -->
-      <div class="loader"></div>
+      <div id="loader"></div>
     <div id="results">
     </div>
   <!-- </div> -->
