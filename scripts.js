@@ -49,6 +49,21 @@ function searchTowns(){
       // Grab the results from the API JSON return
       var totalresults = data.total;
       console.log(totalresults);
+
+      var Business = function(id, alias, phone, image, name, rating, reviewcount, address, city, state, zipcode){
+        this.id = id;
+        this.alias = alias;
+        this.phone = phone;
+        this.image = image;
+        this.name = name;
+        this.rating = rating;
+        this.reviewcount = reviewcount;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zipcode = zipcode;
+      };
+
       // If our results are greater than 0, continue
       if (totalresults > 0){
         console.log("running total results" + myurl);
@@ -68,8 +83,30 @@ function searchTowns(){
           var city = item.location.city;
           var state = item.location.state;
           var zipcode = item.location.zip_code;
+          var price = item.price;
+          var categories = item.categories;
+          var url = item.url;
           // Append our result into our page
-          $('#results').append('<div class="jaunt" id="' + id + '"">' + name + '<img src="' + image + '" style="width:200px;height:150px;"><br> <b></b>  <br>' + address + ' ' + city + ', ' + state + ' ' + zipcode + '<br>' + phone + '<br></div>');
+
+          var currentBusiness = new Business(id, alias, phone, image, name, rating, reviewcount, address, city, state, zipcode);
+          $('#results').append('<div class="jaunt" id="' + id + '">' +
+          '<div class="businessDetails">' + '<h1>' + name + '</h1>'  +
+          // '<b>' + '<p id="price">' + price + '</p>' + '</b>' + '<br><br>' +
+          '<br>' + '<p>' + address + ' ' +
+          city + ', ' +
+          state + ' ' +
+          zipcode + '<br>' +
+          phone + '<br><br>' +
+          '<a href=' + url + ' target="_blank">' + '<i class="fab fa-yelp fa-2x"></i>' + '</a>' + ' ' +
+          '</p>' + '</div>' +
+          '<div class="imageContainer">' + '<img src="' + image + '">' + '</div>' +
+          '<br></div>');
+
+          // if (price[i] === undefined) {
+          //   console.log("undefined price");
+          //   document.getElementById( 'price' ).style.display = 'none';
+          // }
+
         });
         var firstDataState = data.businesses[0].location.state;
         var firstDataCity = data.businesses[0].location.city;

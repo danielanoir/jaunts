@@ -1,203 +1,213 @@
-html {
-  background-color: #ebf6f7; }
-  html .bodyContainer {
-    width: 100%;
-    position: relative;
-    margin: auto; }
-  html .nav {
-    z-index: 100;
-    height: 6vh;
-    background-color: white;
-    border-bottom: solid #d3edeb 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    html .nav a {
-      margin: 10px 20px 10px 20px;
-      color: #3e605b;
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none; }
-    html .nav a:hover {
-      color: #243835;
-      text-decoration: underline; }
-  html .banner {
-    padding-top: 6vh;
-    height: 94vh;
-    width: 100%;
-    background-image: url(bannerSlide1.jpg);
-    background-position: top;
-    background-size: cover;
-    background-repeat: no-repeat;
+html .bodyContainer {
+  width: 100%;
+  position: relative;
+  margin: auto; }
+html .nav {
+  z-index: 100;
+  height: 6vh;
+  background-color: white;
+  border-bottom: solid #d3edeb 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  html .nav a {
+    margin: 10px 20px 10px 20px;
+    color: #3e605b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
+  html .nav a:hover {
+    color: #243835;
+    text-decoration: underline; }
+html .banner {
+  padding-top: 6vh;
+  height: 94vh;
+  width: 100%;
+  background-image: url(bannerSlide1.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  html .banner .bannerTextDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center; }
-    html .banner .bannerTextDiv {
+    text-align: center;
+    margin: auto;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 30vw;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 10px;
+    padding: 20px; }
+    html .banner .bannerTextDiv .heading {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      margin: auto;
-      margin-top: 5vh;
-      margin-bottom: 5vh;
-      width: 30vw;
-      background-color: black;
-      opacity: 0.9;
+      justify-content: center;
+      align-content: center; }
+      html .banner .bannerTextDiv .heading .jaunts {
+        font-size: 4em;
+        padding: 20px;
+        margin: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #f93802;
+        text-align: center; }
+      html .banner .bannerTextDiv .heading .town {
+        display: none; }
+  html .banner .search {
+    background-color: white;
+    height: 60px;
+    border-radius: 10px; }
+    html .banner .search input {
+      width: 20vw;
+      border: none;
+      font-size: 1.5em;
+      padding-left: 1vw;
+      color: #33635c; }
+    html .banner .search input:focus {
+      outline-width: 0; }
+    html .banner .search button {
+      border: none;
+      background-color: #f93802;
       color: white;
-      border-radius: 10px;
-      padding: 20px; }
-      html .banner .bannerTextDiv .heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center; }
-        html .banner .bannerTextDiv .heading .jaunts {
-          font-size: 4em;
-          padding: 20px;
-          margin: 0px;
-          font-family: Arial, Helvetica, sans-serif;
-          color: #f93802;
-          text-align: center; }
-        html .banner .bannerTextDiv .heading .town {
-          display: none; }
-    html .banner .search {
-      background-color: white;
       height: 60px;
-      border-radius: 10px; }
-      html .banner .search input {
-        width: 20vw;
-        border: none;
-        font-size: 1.5em;
-        padding-left: 1vw;
-        color: #33635c; }
-      html .banner .search input:focus {
-        outline-width: 0; }
-      html .banner .search button {
-        border: none;
-        background-color: #f93802;
-        color: white;
-        height: 60px;
-        width: 60px;
-        margin-left: auto;
-        margin-right: 0px;
-        border-radius: 0px 10px 10px 0px; }
-      html .banner .search button:hover {
-        background-color: #e03201; }
-  html .resultsDiv {
-    display: none; }
-  html .layout2 .bodyContainer {
-    width: 100%;
-    position: relative;
-    margin: auto; }
-  html .layout2 .nav {
-    z-index: 100;
-    height: 6vh;
-    background-color: white;
-    border-bottom: solid #d3edeb 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%; }
-    html .layout2 .nav a {
-      margin: 10px 20px 10px 20px;
-      color: #3e605b;
-      font-family: Arial, Helvetica, sans-serif;
-      text-decoration: none; }
-    html .layout2 .nav a:hover {
-      color: #243835;
-      text-decoration: underline; }
-  html .layout2 .banner {
-    height: 20vh;
-    width: 100%;
-    background-image: none;
+      width: 60px;
+      margin-left: auto;
+      margin-right: 0px;
+      border-radius: 0px 10px 10px 0px; }
+    html .banner .search button:hover {
+      background-color: #e03201; }
+html .resultsDiv {
+  display: none; }
+html .layout2 .bodyContainer {
+  width: 100%;
+  position: relative;
+  margin: auto; }
+html .layout2 .nav {
+  z-index: 100;
+  height: 6vh;
+  background-color: white;
+  border-bottom: solid #d3edeb 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  html .layout2 .nav a {
+    margin: 10px 20px 10px 20px;
+    color: #3e605b;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
+  html .layout2 .nav a:hover {
+    color: #243835;
+    text-decoration: underline; }
+html .layout2 .banner {
+  height: 20vh;
+  width: 100%;
+  position: fixed;
+  z-index: 90;
+  overflow: hidden;
+  background-image: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+  html .layout2 .banner .bannerTextDiv {
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
-    justify-content: center; }
-    html .layout2 .banner .bannerTextDiv {
+    text-align: center;
+    margin: auto;
+    margin-top: -5px;
+    width: 97vw;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+    border-radius: 0px; }
+    html .layout2 .banner .bannerTextDiv .heading {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      align-content: center;
-      text-align: center;
-      margin: auto;
-      margin-top: -5px;
-      width: 97vw;
-      background-color: black;
-      opacity: 0.9;
+      justify-content: center;
+      align-content: center; }
+      html .layout2 .banner .bannerTextDiv .heading .jaunts {
+        display: none; }
+      html .layout2 .banner .bannerTextDiv .heading .town {
+        display: inline;
+        font-size: 2em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px 10px 20px 10px; }
+  html .layout2 .banner .search {
+    background-color: white;
+    height: 50px;
+    border-radius: 10px; }
+    html .layout2 .banner .search input {
+      width: 20vw;
+      border: none;
+      font-size: 1.5em;
+      padding-left: 1vw;
+      color: #33635c; }
+    html .layout2 .banner .search input:focus {
+      outline-width: 0; }
+    html .layout2 .banner .search button {
+      border: none;
+      background-color: #f93802;
       color: white;
-      border-radius: 0px; }
-      html .layout2 .banner .bannerTextDiv .heading {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-content: center; }
-        html .layout2 .banner .bannerTextDiv .heading .jaunts {
-          display: none; }
-        html .layout2 .banner .bannerTextDiv .heading .town {
-          display: inline;
-          font-size: 2em;
-          text-align: center;
-          font-family: Arial, Helvetica, sans-serif;
-          padding: 10px 10px 20px 10px; }
-    html .layout2 .banner .search {
-      background-color: white;
       height: 50px;
-      border-radius: 10px; }
-      html .layout2 .banner .search input {
-        width: 20vw;
-        border: none;
-        font-size: 1.5em;
-        padding-left: 1vw;
-        color: #33635c; }
-      html .layout2 .banner .search input:focus {
-        outline-width: 0; }
-      html .layout2 .banner .search button {
-        border: none;
-        background-color: #f93802;
-        color: white;
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        margin-right: 0px;
-        border-radius: 0px 10px 10px 0px; }
-      html .layout2 .banner .search button:hover {
-        background-color: #e03201; }
-  html .layout2 .resultsDiv {
+      width: 50px;
+      margin-left: auto;
+      margin-right: 0px;
+      border-radius: 0px 10px 10px 0px; }
+    html .layout2 .banner .search button:hover {
+      background-color: #e03201; }
+html .layout2 .resultsDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 26vh; }
+  html .layout2 .resultsDiv #results .jaunt {
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
-    justify-content: center; }
-    html .layout2 .resultsDiv #results {
-      overflow-y: scroll;
-      height: 80vh;
-      width: 60vw;
-      background-color: white; }
-      html .layout2 .resultsDiv #results .jaunt {
-        display: flex;
-        justify-content: flex-start;
-        flex-direction: column;
-        padding-top: 1vh;
-        border: solid .5px #cccccc;
-        border-radius: 10px;
-        background-color: white;
-        margin: 1em;
-        height: 20em;
-        width: 40vw; }
-        html .layout2 .resultsDiv #results .jaunt img {
-          padding: 10px; }
-        html .layout2 .resultsDiv #results .jaunt b {
-          padding: 15px;
-          font-size: 15px; }
+    flex-wrap: wrap;
+    padding: 2em;
+    border-bottom: solid .5px #cccccc;
+    background-color: white;
+    width: 50vw; }
+    html .layout2 .resultsDiv #results .jaunt .businessDetails {
+      margin-left: 0;
+      margin-right: auto;
+      max-width: 30vw;
+      font-family: Arial, Helvetica, sans-serif;
+      color: #2e2e2e; }
+      html .layout2 .resultsDiv #results .jaunt .businessDetails h1 {
+        font-size: 1.8em; }
+      html .layout2 .resultsDiv #results .jaunt .businessDetails p {
+        font-size: 1.2em; }
+    html .layout2 .resultsDiv #results .jaunt .imageContainer {
+      height: 250px;
+      width: 250px;
+      overflow: hidden;
+      border: solid white 20px;
+      min-width: 250px; }
+      html .layout2 .resultsDiv #results .jaunt .imageContainer img {
+        padding: 10px;
+        height: 350px;
+        margin-right: 0px; }
 
 .servicesBanner {
   position: relative;

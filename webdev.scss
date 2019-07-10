@@ -13,6 +13,7 @@ background-size: cover;
   z-index: 100;
   background-color: black;
   color: #b2b2b2;
+  font-size: 1.2em;
   display: flex;
   flex-direction: row;
   align-items:center;
@@ -38,7 +39,7 @@ background-size: cover;
     width: 10vw;
     height:10vh;
     color: black;
-    font-size: 2em;
+    font-size: 3em;
     padding-top: 6vh;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -51,13 +52,12 @@ background-size: cover;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    // margin: 0em 3em 0em 0em;
     .nav {
       background-color: white;
       opacity: .8;
       padding: 1em;
+      font-size: 1em;
       a {
-        font-size: .8em;
         padding: 0em 1em 0em 1em;
         letter-spacing: 2px;
       }
@@ -71,7 +71,7 @@ background-size: cover;
       padding: 1em;
       .contact {
         color: white;
-        font-size: .8em;
+        font-size: 1em;
         padding: 0em 1em 0em 1em;
         letter-spacing: 2px;
       }
@@ -84,23 +84,24 @@ background-size: cover;
   .blurbBox {
     font-family: Arial, Helvetica, sans-serif;
     padding: 1em;
-    color: #2d2d2d;
+    color: black;
     text-align: center;
     background-color: white;
-    opacity: .8;
+    opacity: .6;
     letter-spacing: 2px;
     line-height: 30px;
-    bottom: 5em;
-    right: 5em;
+    bottom: 4em;
+    right: 4em;
     position: absolute;
-    width: 30em;
-    height: 12em;
+    width: 40em;
+    height: 10em;
     h1 {
-      font-size: 1.5em;
+      font-size: 2.5em;
       font-weight: 100;
     }
     p {
       font-weight: 100;
+      font-size: 2em;
     }
   }
 }
@@ -112,7 +113,7 @@ background-size: cover;
   height: 10vh;
   background-color: #fffef2;
   p {
-    font-size: 1.5em;
+    font-size: 1.8em;
     line-height: 30px;
     letter-spacing: 2px;
     text-align: center;
@@ -154,7 +155,7 @@ background-size: cover;
       margin: 15px 0px 0px 0px;
     }
     p {
-      font-size: 1.5em;
+      font-size: 2em;
       color: #ebdbff;
       font-weight: 100;
     }
@@ -166,10 +167,11 @@ background-size: cover;
   height: 90vh;
   background-color: #e8efff;
   padding: 10em 0em 0em 0em;
+  display: flex;
+  align-items: center;
   .image1{
     width: 55em;
     height:40em;
-    margin: 0em 0em 0em 10em;
     background-image: url("workstation.jpg");
     background-position: bottom;
     background-repeat: no-repeat;
@@ -177,15 +179,16 @@ background-size: cover;
   }
   .text1{
     width: 35em;
-    height: 20em;
+    height: 15em;
     float: right;
-    margin: -30em 20em 0em 0em;
+    opacity: 0.8;
     background-color: white;
     text-align: center;
-    padding: 3em;
+    padding: 1em;
     color: #2d2d2d;
     line-height: 30px;
     letter-spacing: 3px;
+    font-size: 1.5em;
     a {
       text-decoration: underline;
     }
@@ -208,7 +211,8 @@ background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 2px;
     font-weight: 100;
-    font-size: 1.2em;
+    font-size: 2em;
+    margin: .5em;
   }
 }
 
